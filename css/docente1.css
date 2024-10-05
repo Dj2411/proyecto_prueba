@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px; /* Espacio entre header y contenido principal */
+}
+
+.registro {
+    max-width: 800px;
+    margin: auto; /* Centro horizontal */
+    padding: 20px;
+    flex-grow: 1; /* Ocupa todo el espacio restante */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.grados-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.grado-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.back-button {
+    position: initial;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.grado-card input[type="text"] {
+    width: calc(100% - 16px); /* Ajuste para el padding y border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grado-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.grado-card button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Mantiene el pie de página al final de la página */
+    width: 100%;
+}
+
+#logout {
+    background-color: #ff0000; /* Color de fondo (rojo claro) */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: absolute; /* Fija la posición en la pantalla */
+    top: 20px; /* Alinea el botón 20px desde la parte superior */
+    right: 20px; /* Alinea el botón 20px desde el borde derecho */
+    z-index: 1000; /* Asegura que el botón quede encima de otros elementos */
+}
+
+/* Cambiar el color del botón cuando el usuario pasa el ratón encima */
+#logout:hover {
+    background-color: #e60000; /* Color rojo más oscuro */
+}
+
+/* Efecto al hacer clic */
+#logout:active {
+    background-color: #cc0000; /* Color rojo aún más oscuro */
+    transform: scale(0.98); /* Hace un pequeño "encogimiento" */
+}

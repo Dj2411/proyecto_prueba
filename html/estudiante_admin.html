@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse en Actividades Extracurriculares</title>
+    <link rel="stylesheet" href="../css/estudiante_admin.css">
+    <script src="../js/verificacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Registrarse en Actividades Extracurriculares</h1>
+        <button id="logout">Cerrar Sesión</button>
+    </header>
+
+    <section class="registro">
+        <h2>Selecciona tus actividades</h2>
+
+        <form action="../html/estudiante2_admin.html">
+            <label for="actividad1">
+                <input type="checkbox" id="actividad1" name="actividad1">
+                Baile contemporáneo
+            </label><br>
+            <label for="actividad2">
+                <input type="checkbox" id="actividad2" name="actividad2">
+                Club de Debate
+            </label><br>
+            <label for="actividad3">
+                <input type="checkbox" id="actividad3" name="actividad3">
+                Taller de Arte
+            </label><br>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <button class="prev-button" onclick="location.href='../html/admin.html'">Regresar</button>
+    <footer>
+        <p>&copy; 2024 Registro de Actividades Extracurriculares Estudiantes</p>
+    </footer>
+</body>
+</html>

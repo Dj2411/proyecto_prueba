@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/verificacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+       
+        <button id="logout">Cerrar Sesión</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#gestion-usuarios">Gestión de Usuarios</a></li>
+            <li><a href="#gestion-actividades">Gestión de Actividades</a></li>
+            <li><a href="#reportes">Reportes</a></li>
+        </ul>
+    </nav>
+
+    <section id="gestion-usuarios" class="admin-section">
+        <h2>Gestión de Usuarios</h2>
+        <div class="section-content">
+            <button onclick="location.href='../html/rector_admin.html';" class="btn">Gestionar Rectores</button>
+            <button onclick="location.href='../html/docente_admin.html';" class="btn">Gestionar Docentes</button>
+            <button onclick="location.href='../html/estudiante_admin.html';" class="btn">Gestionar Estudiantes</button>
+        </div>
+    </section>
+
+    <section id="gestion-actividades" class="admin-section">
+        <h2>Gestión de Actividades</h2>
+        <div class="section-content">
+            <button onclick="location.href='../html/act.html';" class="btn">Gestionar Actividades</button>
+        </div>
+    </section>
+
+    <section id="reportes" class="admin-section">
+        <h2>Reportes</h2>
+        <div class="section-content">
+            <button onclick="location.href='../html/reportes.html';" class="btn">Ver Reportes</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Panel de Administración</p>
+    </footer>
+
+</body>
+</html>

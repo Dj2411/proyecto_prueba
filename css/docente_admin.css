@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.actividades {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.back-button {
+    position: initial;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Estilo para el contenedor de botones */
+.buttons {
+    display: flex;
+    justify-content: center; /* Centrar el contenido */
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#crearActividadBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#crearActividadBtn:hover {
+    background-color: #0056b3;
+}
+
+#registroGradoBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#registroGradoBtn:hover {
+    background-color: #218838;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilo para el calendario */
+#calendario {
+    margin-top: 20px;
+}
+.prev-button, .next-button {
+    position: fixed;
+    bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.prev-button {
+    left: 20px;
+}
+.prev-button:hover, .next-button:hover {
+    background-color: #0056b3;
+}
+#logout {
+    background-color: #ff0000; /* Color de fondo (rojo claro) */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: fixed; /* Fija la posición en la pantalla */
+    top: 20px; /* Alinea el botón 20px desde la parte superior */
+    right: 20px; /* Alinea el botón 20px desde el borde derecho */
+    z-index: 1000; /* Asegura que el botón quede encima de otros elementos */
+}
+
+/* Cambiar el color del botón cuando el usuario pasa el ratón encima */
+#logout:hover {
+    background-color: #e60000; /* Color rojo más oscuro */
+}
+
+/* Efecto al hacer clic */
+#logout:active {
+    background-color: #cc0000; /* Color rojo aún más oscuro */
+    transform: scale(0.98); /* Hace un pequeño "encogimiento" */
+}

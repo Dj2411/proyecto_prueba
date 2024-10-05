@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes - Actividades Extracurriculares</title>
+    <link rel="stylesheet" href="../css/estilodocente.css">
+    <script src="../js/verificacion.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Docentes - Actividades Extracurriculares</h1>
+        <button id="logout">Cerrar Sesión</button>
+    </header>
+
+    <section class="actividades">
+        <h2>Crear y gestionar actividades extracurriculares</h2>
+        <p>En esta sección podrás encontrar todas las herramientas necesarias para crear y gestionar actividades extracurriculares para los estudiantes.</p>
+        <div class="buttons">
+            
+            <button id="crearActividadBtn" type="button">Crear Actividad Extracurricular</button>
+            <button id="registroGradoBtn" type="button">Formular Asistencias de grados</button>
+        </div>
+        
+        <!-- Formulario oculto para crear actividad -->
+        <form id="crearActividadForm" class="hidden">
+            <label for="nombreDocente">Nombre del Docente:</label>
+            <input type="text" id="nombreDocente" name="nombreDocente" required>
+            <label for="actividad">Actividad a Realizar:</label>
+            <input type="text" id="actividad" name="actividad" required>
+            <label for="grados">Grados Participantes:</label>
+            <input type="text" id="grados" name="grados" required>
+            <label for="fechaHora">Fecha y Hora:</label>
+            <input type="text" id="fechaHora" name="fechaHora" required>
+            <button type="submit">Solicitar Actividad</button>
+        </form>
+
+        <!-- Calendario FullCalendar (inicialmente oculto) -->
+        <div id="calendario" class="hidden"></div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Docentes - Actividades Extracurriculares</p>
+    </footer>
+
+    <script src="../js/docente.js"></script> <!-- Script personalizado -->
+</body>
+</html>
